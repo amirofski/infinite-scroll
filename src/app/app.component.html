@@ -326,7 +326,9 @@
 </div>
 
 <div class="content" role="main">
-
+  <div *ngFor="let post of posts" #post>
+    <!-- Post content here -->
+  </div>
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
