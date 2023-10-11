@@ -31,7 +31,7 @@ export class AppComponent implements AfterViewInit, OnInit {
 
   // Handle window scroll events
   @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
+  onScroll(event?: Event) {
     console.log('Window scrolled');
     // Check if the user has scrolled to the bottom
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
